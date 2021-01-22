@@ -1,0 +1,58 @@
+<!-- 
+Development by Adriel Teles
+github: https://github.com/adrielteles
+linkedin: https://www.linkedin.com/in/adriel-teles-010343162/
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <Meta charset="UTF-8"/>
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Siginup Form</title>
+    </head>
+    <body>
+        <div class="center-signup">
+            <h1>SignUp</h1>
+            <form method="POST">
+                <div class="text_field_signup">
+                    <input type="text" name="fname" required onblur="validateFirstName(fname)">
+                    <span></span>
+                    <label id="msgfname">First Name</label>
+                </div>
+                <div class="text_field_signup">
+                    <input type="text" name="lname" required onblur="validateLastName(lname)">
+                    <span></span>
+                    <label id="msglname">Last Name</label>
+                </div>
+                <div class="text_field_signup full-line">
+                    <input type="text" name="email" required onblur="validateEmail(email)">
+                    <span></span>
+                    <label id="msgemail">E-mail</label>
+                </div>
+                <div class="text_field_signup">
+                    <input type="password" name="password" required onblur="validatePassword(password)" maxlength="8">
+                    <span></span>
+                    <label id="msgpass">Password</label>
+                </div>
+                <div class="text_field_signup">
+                    <input type="password" name="confirmPassword" required onblur="validateConfirmPassword(confirmPassword)" maxlength="8">
+                    <span></span>
+                    <label id="msgconfpass">Confirm Password</label>
+                </div>
+                <div class="passValidate">
+                    The password must contain<br>
+                    Must contain at least one capital letter<br>
+                    Must contain at least one lowercase letter<br>
+                    Must contain at least one number<br>
+                    Must contain at least one special character<br>
+                    must contain 8 characters
+                </div>
+                <input class="signup-input" type="submit" value="SignUp">
+                <div class="login_link">
+                    Already a member? <a href="./login.html">Login</a>
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript" src="js/validation.js"></script>
+    </body>
+</html>
